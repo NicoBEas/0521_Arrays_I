@@ -135,20 +135,24 @@ function getSentenceArr(arr) {
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
-// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
     const GAP   = " ";
     const PUNCT = ".";
-
-    let str;
+    let str = "";
 
    for (let i = 0; i < arr.length; i++) {
-        output(arr[i]); // i als Index des Arrays
+
+        // wenn ich noch NICHT das letzte Element habe --> gap
+        // wenn ich das letzte Element habe -->  punct
+        // a = a + 1 || a += 1  
+
+        str = str + arr[i] + GAP;
     }
 
-    
+    str = str.trim();
+    return str + PUNCT;
 
-    return str;
 }
 
 
