@@ -26,9 +26,9 @@
 /* For -Schleifen als allg. Wiederholungs-Struktur */
 
 // Inkrement (untere Grenze --> obere Grenze)
-for (let i = 0; i < 10; i++) {
-   output("index i:" + i);
-}
+// for (let i = 0; i < 10; i++) {
+//    output("index i:" + i);
+// }
 
 // Dekrement (obere Grenze --> untere Grenze)
 // for (let i = 10; i > 0; i--) {
@@ -40,9 +40,11 @@ for (let i = 0; i < 10; i++) {
 //     output("index i: " + i);
 // }
 
-
-
-
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+for (let i = 0; i < arr.length; i++) {
+    output("index i:" + i + " " + arr[i]); // i als Index des Arrays
+}
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
